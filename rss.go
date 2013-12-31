@@ -26,16 +26,18 @@ type ItemEnclosure struct {
 	Type string `xml:"type,attr"`
 }
 
+/*
 type AtomLink struct {
 	Href string `xml:"href,attr"`
 	Rel  string `xml:"rel,attr"`
 	Type string `xml:"type,attr"`
 }
+*/
 
 type Item struct {
 	Title       string        `xml:"title"`
 	Link        string        `xml:"link"`
-	AtomLink    AtomLink      `xml:"http://www.w3.org/2005/Atom/ link"`
+/*	AtomLink    AtomLink      `xml:"http://www.w3.org/2005/Atom/ link"` */
 	Comments    string        `xml:"comments"`
 	PubDate     Date          `xml:"pubDate"`
 	GUID        string        `xml:"guid"`
